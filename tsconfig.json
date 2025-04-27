@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "ES2017",
+    "module": "Node16",
+    "lib": [
+      "es2021"
+    ],
+    "allowJs": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "strict": false,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "skipLibCheck": true,
+    "paths": {
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@middleware/*": [
+        "src/middleware/*"
+      ]
+    }
+  },
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "./buildA/**/*"
+  ]
+}
